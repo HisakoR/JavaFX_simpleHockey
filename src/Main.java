@@ -42,10 +42,6 @@ public class Main extends Application {
     private int playerBsc = 0;
     private boolean getScore = true;
 
-    //鼠标操作
-    private double mouseX;
-    private double mouseY;
-
     @Override
     public void start(Stage primaryStage) {
         //初始化程序
@@ -138,20 +134,6 @@ public class Main extends Application {
             else if (code == KeyCode.S) {
                 BisMovingDown = false;
             }
-        });
-
-        playerA.setOnMousePressed(event -> {
-            mouseX = event.getSceneX();
-            mouseY = event.getSceneY();
-        });
-
-        playerA.setOnMouseDragged(event -> {
-            double deltaX = event.getSceneX() - mouseX;
-            double deltaY = event.getSceneY() - mouseY;
-            AvelocityX = deltaX * 4;
-            AvelocityY = deltaY * 4;
-            mouseX = event.getSceneX();
-            mouseY = event.getSceneY();
         });
 
         //向场景添加并更新两个玩家
