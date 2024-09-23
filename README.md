@@ -7,7 +7,7 @@ Can be used as a teaching or reference, please mark the github link while using.
 =player1=  
 move: ↑←↓→  
 colour: blue  
-=player2=
+=player2=  
 move: wasd  
 colour: red  
   
